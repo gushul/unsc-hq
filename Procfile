@@ -1,0 +1,3 @@
+# Procfile
+backend: bin/rails s thin -p 3000
+frontend: bin/webpack-dev-server
