@@ -8,12 +8,12 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
 import App from './frontend/app.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-
-import BootstrapVue from 'bootstrap-vue'
+import 'babel-polyfill'
 
 Vue.use(BootstrapVue);
 
