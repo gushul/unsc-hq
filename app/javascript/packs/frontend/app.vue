@@ -1,6 +1,7 @@
 <template>
   <div id='app'>
-    <p>{{ message }}</p>
+    <b-jumbotron header="UNSC Headquarters" :lead="message" >
+    </b-jumbotron>
   </div>
 </template>
 
@@ -16,7 +17,5 @@
 
 <style scoped>
   p {
-    font-size: 2em;
-    text-align: center;
   }
 </style>
