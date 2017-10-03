@@ -8,19 +8,37 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
-import App from './frontend/app.vue'
+
+import App from './frontend/App.vue'
+import Weapons from './frontend/components/Weapons.vue'
+import About from './frontend/components/About.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'babel-polyfill'
 
+Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.appendChild(document.createElement('app'))
+    const routes = [
+        { path: '/', template: '' },
+        { path: '/weapons', component: Weapons },
+        { path: '/about', component: About }
+    ]
 
-    const app = new Vue(App).$mount('app')
+    const router = new VueRouter({
+        routes,
+        mode: 'history'
+    })
 
-    console.log(app)
+    const app = new Vue({
+        el: '#app',
+        router: router,
+        render: h => h(App)
+    })
+
+    // console.log(app)
 })

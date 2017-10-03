@@ -22,3 +22,6 @@
 
 # rvm
 .ruby-gemset
+
+# dotenv gem
+.env

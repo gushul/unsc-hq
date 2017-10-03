@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 # Manage Procfile-based applications http://ddollar.github.com/foreman
 gem 'foreman', '~> 0.84.0'
 
+# Wrapper for Halo Public API (BETA). https://developer.haloapi.com
+gem 'halo-api', '~> 0.4.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -45,6 +48,8 @@ group :development, :test do
   gem 'capybara', '~> 2.15', '>= 2.15.1'
   # RSpec for Rails-3+ http://relishapp.com/rspec/rspec-rails
   gem 'rspec-rails', '~> 3.6'
+  # A Ruby gem to load environment variables from `.env`.
+  gem 'dotenv-rails'
 end
 
 group :development do
