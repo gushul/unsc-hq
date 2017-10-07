@@ -6,7 +6,11 @@
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
           <b-nav-item href="/">Home</b-nav-item>
-          <b-nav-item href="/weapons">Halo 5 Weapons</b-nav-item>
+          <b-nav-item-dropdown text="Halo 5">
+            <b-dropdown-item href="/weapons">Weapons</b-dropdown-item>
+            <b-dropdown-item href="/campaign-missions">Campaign Missions</b-dropdown-item>
+            <b-dropdown-item href="/enemies">Enemies</b-dropdown-item>
+          </b-nav-item-dropdown>
           <b-nav-item href="/about">About</b-nav-item>
         </b-nav>
         <!-- Right aligned nav items -->

@@ -9,7 +9,7 @@
                     :img-alt="weapon.name"
                     img-top
                     tag="article"
-                    style="max-width: 20rem;"
+                    style="max-width: 30rem;"
                     class="mb-2">
               <p class="card-text">
                 <span>{{weapon.type}}</span>

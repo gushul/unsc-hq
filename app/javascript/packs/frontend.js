@@ -13,6 +13,8 @@ import BootstrapVue from 'bootstrap-vue'
 
 import App from './frontend/App.vue'
 import Weapons from './frontend/components/Weapons.vue'
+import Missions from './frontend/components/Missions.vue'
+import Enemies from './frontend/components/Enemies.vue'
 import About from './frontend/components/About.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const routes = [
         { path: '/', template: '' },
         { path: '/weapons', component: Weapons },
+        { path: '/campaign-missions', component: Missions },
+        { path: '/enemies', component: Enemies },
         { path: '/about', component: About }
     ]
 
