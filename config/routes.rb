@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'frontend#index'
 
   # Api definition
-  namespace :api, constraints: { format: 'json' } do
+  namespace :api, defaults: { format: 'json' } do
     namespace :v1 do
       get 'weapons', to: 'halo#weapons'
       get 'campaign-missions', to: 'halo#campaign_missions'
