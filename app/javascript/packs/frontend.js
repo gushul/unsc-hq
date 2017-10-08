@@ -19,6 +19,9 @@ import About from './frontend/components/About.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+import '../src/frontend.scss'
+
 import 'babel-polyfill'
 
 Vue.use(VueRouter);

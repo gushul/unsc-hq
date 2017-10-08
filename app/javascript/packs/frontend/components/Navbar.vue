@@ -1,6 +1,6 @@
 <template>
   <div class="menu-navbar">
-    <b-navbar toggleable="md" type="dark" variant="success">
+    <b-navbar toggleable="md" type="dark" variant="halo-theme">
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
       <b-navbar-brand href="/">UNSC Headquarters</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">

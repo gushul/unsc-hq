@@ -1,0 +1,18 @@
+.bg-halo-theme {
+  background-color: $primary-color;
+}
+
+a.bg-halo-theme:focus,
+a.bg-halo-theme:hover {
+  background-color: $primary-color-light;
+}
+
+body {background-image: url("unsc-bg.png");
+  height: 1080px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
