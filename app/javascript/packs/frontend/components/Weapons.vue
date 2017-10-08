@@ -10,6 +10,8 @@
                     img-top
                     tag="article"
                     style="max-width: 30rem;"
+                    border-variant="dark"
+                    bg-variant="secondary"
                     class="mb-2">
               <p class="card-text">
                 <span>{{weapon.type}}</span>

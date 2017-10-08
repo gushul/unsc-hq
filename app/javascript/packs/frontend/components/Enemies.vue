@@ -8,12 +8,17 @@
               <b-card :title="enemy.name"
                       :img-src="enemy.largeIconImageUrl"
                       :img-alt="enemy.name"
-                      img-top>
+                      img-top
+                      border-variant="dark"
+                      bg-variant="secondary"
+                      footer-bg-variant="warning"
+                      footer-border-variant="dark"
+                      footer-text-variant="black">
                 <p class="card-text">
                   {{enemy.description}}
                 </p>
                 <div slot="footer">
-                  <small class="text-muted">{{enemy.faction}}</small>
+                  <small>{{enemy.faction}}</small>
                 </div>
               </b-card>
             </div>
@@ -49,3 +54,7 @@
         }
     };
 </script>
+
+<style scoped>
+  .enemy-card {margin: 10px;}
+</style>

@@ -9,7 +9,9 @@
                     :img-alt="mission.name"
                     text-variant="white"
                     :title="mission.name"
-                    :sub-title="mission.type">
+                    :sub-title="mission.type"
+                    border-variant="dark"
+                    bg-variant="secondary">
               <p class="card-text">
                 {{mission.description}}
               </p>
