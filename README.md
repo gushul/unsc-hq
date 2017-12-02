@@ -4,6 +4,9 @@ This is a website experiment to show the latest rails version with vue.js
 
 Single-page application (SPA). Rails 5 + Vue.js
 
+## Demo
+[https://unsc-hq.herokuapp.com/](https://unsc-hq.herokuapp.com/)
+
 ## Versions
 * Ruby 2.4.2
 * Rails 5.1.4
